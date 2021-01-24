@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Penumbra
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our team made a Chrome extension in React that smart inverts videos in the browser. 
+
 
 ## Available Scripts
 
