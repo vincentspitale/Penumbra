@@ -1,0 +1,24 @@
+.toggler {
+   background: rgb(53, 53, 53);
+   color: white;
+   padding: 10px;
+   font-weight: 700;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.toggler:hover {
+    transform: scale(1.05);
+}
+
+.toggled {
+    background: var(--holo);
+    color: black;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+}

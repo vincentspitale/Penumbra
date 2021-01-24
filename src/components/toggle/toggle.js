@@ -1,45 +1,51 @@
 /*global chrome*/
 
 import React, {Component} from "react"
+import './toggle.css'
 
-function cssCode(tabId) {   
+function insertCode(tabId, isDark) {   
     chrome.tabs.insertCSS(tabId, {
-        code: "video, embed {  -webkit-filter: invert(100%);} ",
+        code: isDark ? "video, embed {  -webkit-filter: invert(100%) hue-rotate(180deg); } " : "video, embed {  -webkit-filter: none; } ",
         allFrames: true,
         runAt: "document_start"
     });
 }
 
-function updateTabs() {
+
+
+function updateTabs(isDark) {
     chrome.tabs.query({}, function (tabs) {
         for (var i=0; i<tabs.length; ++i) {
             var tab = tabs[i];
             if (tab.url && tab.url.slice(0,4) == "http")
-                cssCode(tab.id);
+                insertCode(tab.id, isDark);
         }
     })
 }
-
 
 class Toggle extends Component {
     constructor(props) {
         super(props)
 
+        const stickyValue =
+        window.localStorage.getItem('isDark');
+    
+
         this.state = {
-            isDark: true,
+            isDark: JSON.parse(stickyValue),
         }
 
-        updateTabs()
     }
+    
 
     toggle() {
+        window.localStorage.setItem('isDark', !this.state.isDark)
         this.setState({isDark: !this.state.isDark})
-        cssCode()
-        updateTabs()
     }
 
     render() { 
-        return <button onClick={() => this.toggle()}>{this.state.isDark ? "Disable Invert" : "Enable Invert"}</button>
+        updateTabs(this.state.isDark)
+        return <button className={this.state.isDark ? "toggler toggled" : "toggler"} onClick={() => this.toggle()}>{this.state.isDark ? "Disable Invert" : "Enable Invert"}</button>
     }
 
     

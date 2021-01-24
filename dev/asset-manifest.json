@@ -10,15 +10,15 @@
     "contentScript.js.map": "contentScript.bundle.js.map",
     "options.js": "options.bundle.js",
     "options.js.map": "options.bundle.js.map",
-    "static/media/logo.svg": "static/media/logo.103b5fa1.svg"
+    "static/media/logo.svg": "static/media/logo.3acb2848.svg"
   },
   "entrypoints": [
     "app.bundle.js",
-    "app.2fbff784a4c94af20768.hot-update.js",
+    "app.5dd6e5c82d7c72febd1e.hot-update.js",
     "options.bundle.js",
-    "options.2fbff784a4c94af20768.hot-update.js",
+    "options.5dd6e5c82d7c72febd1e.hot-update.js",
     "background.bundle.js",
-    "background.2fbff784a4c94af20768.hot-update.js",
+    "background.5dd6e5c82d7c72febd1e.hot-update.js",
     "contentScript.bundle.js"
   ]
 }
