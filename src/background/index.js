@@ -3,7 +3,6 @@
 
 messageInBackground();
 
-
 function insertCode(tabId, isDark) {   
   chrome.tabs.insertCSS(tabId, {
       code: isDark ? "video, embed {  -webkit-filter: invert(100%) hue-rotate(180deg); } " : "video, embed {  -webkit-filter: none; } ",
@@ -11,6 +10,7 @@ function insertCode(tabId, isDark) {
       runAt: "document_start"
   });
 }
+
 
 chrome.tabs.onUpdated.addListener(function(tabId, info) {
   //  if (info.status && info.status == "complete")
