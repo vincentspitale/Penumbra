@@ -92,7 +92,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "39545a37ad3203f81775";
+/******/ 	var hotCurrentHash = "0b97c383355ee3be66d9";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -43248,19 +43248,19 @@ var _jsxFileName = "/Users/vincentspitale/Developer/Web/dark-learning/src/compon
 /*global chrome*/
 
 
-function cssCode(tabId) {
+function insertCode(tabId, isDark) {
   chrome.tabs.insertCSS(tabId, {
-    code: "video, embed {  -webkit-filter: invert(100%);} ",
+    code: isDark ? "video, embed {  -webkit-filter: invert(100%); } " : "video, embed {  -webkit-filter: none; } ",
     allFrames: true,
     runAt: "document_start"
   });
 }
 
-function updateTabs() {
+function updateTabs(isDark) {
   chrome.tabs.query({}, function (tabs) {
     for (var i = 0; i < tabs.length; ++i) {
       var tab = tabs[i];
-      if (tab.url && tab.url.slice(0, 4) == "http") cssCode(tab.id);
+      if (tab.url && tab.url.slice(0, 4) == "http") insertCode(tab.id, isDark);
     }
   });
 }
@@ -43269,26 +43269,25 @@ class Toggle extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   constructor(props) {
     super(props);
     this.state = {
-      isDark: true
+      isDark: localStorage.isDark
     };
-    updateTabs();
   }
 
   toggle() {
+    localStorage.isDark = !this.state.isDark;
     this.setState({
       isDark: !this.state.isDark
     });
-    cssCode();
-    updateTabs();
   }
 
   render() {
+    updateTabs(this.state.isDark);
     return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
       onClick: () => this.toggle(),
       children: this.state.isDark ? "Disable Invert" : "Enable Invert"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 44,
       columnNumber: 16
     }, this);
   }
