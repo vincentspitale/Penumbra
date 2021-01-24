@@ -92,7 +92,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "0b97c383355ee3be66d9";
+/******/ 	var hotCurrentHash = "6ea9187947ccb9923380";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -43250,7 +43250,7 @@ var _jsxFileName = "/Users/vincentspitale/Developer/Web/dark-learning/src/compon
 
 function insertCode(tabId, isDark) {
   chrome.tabs.insertCSS(tabId, {
-    code: isDark ? "video, embed {  -webkit-filter: invert(100%); } " : "video, embed {  -webkit-filter: none; } ",
+    code: isDark ? "video, embed {  -webkit-filter: invert(100%) hue-rotate(180deg); } " : "video, embed {  -webkit-filter: none; } ",
     allFrames: true,
     runAt: "document_start"
   });
@@ -43287,7 +43287,7 @@ class Toggle extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       children: this.state.isDark ? "Disable Invert" : "Enable Invert"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 43,
       columnNumber: 16
     }, this);
   }

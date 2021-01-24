@@ -4,7 +4,7 @@ import React, {Component} from "react"
 
 function insertCode(tabId, isDark) {   
     chrome.tabs.insertCSS(tabId, {
-        code: isDark ? "video, embed {  -webkit-filter: invert(100%); } " : "video, embed {  -webkit-filter: none; } ",
+        code: isDark ? "video, embed {  -webkit-filter: invert(100%) hue-rotate(180deg); } " : "video, embed {  -webkit-filter: none; } ",
         allFrames: true,
         runAt: "document_start"
     });
@@ -31,7 +31,6 @@ class Toggle extends Component {
         }
 
     }
-
     
 
     toggle() {
