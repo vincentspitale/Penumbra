@@ -1,0 +1,12 @@
+.toggler {
+   background: rgb(53, 53, 53);
+   color: white;
+   padding: 10px;
+   font-weight: 700;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.toggled {
+    background: rgb(28, 72, 99);
+}

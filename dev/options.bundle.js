@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "6ea9187947ccb9923380";
+/******/ 	var hotCurrentHash = "5412a778415e9401dca3";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -42966,7 +42966,7 @@ module.exports.formatError = function (err) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/logo.103b5fa1.svg");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "static/media/logo.3acb2848.svg");
 
 /***/ }),
 

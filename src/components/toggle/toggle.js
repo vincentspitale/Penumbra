@@ -1,6 +1,7 @@
 /*global chrome*/
 
 import React, {Component} from "react"
+import './toggle.css'
 
 function insertCode(tabId, isDark) {   
     chrome.tabs.insertCSS(tabId, {
@@ -40,7 +41,7 @@ class Toggle extends Component {
 
     render() { 
         updateTabs(this.state.isDark)
-        return <button onClick={() => this.toggle()}>{this.state.isDark ? "Disable Invert" : "Enable Invert"}</button>
+        return <div className={this.state.isDark ? "toggler toggled" : "toggler"} onClick={() => this.toggle()}>{this.state.isDark ? "Disable Invert" : "Enable Invert"}</div>
     }
 
     
