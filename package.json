@@ -1,5 +1,5 @@
 {
-  "name": "my-browser-extension",
+  "name": "penumbra",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
