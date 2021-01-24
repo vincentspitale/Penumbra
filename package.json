@@ -1,5 +1,5 @@
 {
-  "name": "dark-learning",
+  "name": "my-browser-extension",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,9 +7,9 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
+    "react-browser-extension-scripts": "4.0.10",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

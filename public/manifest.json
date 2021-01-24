@@ -1,13 +1,28 @@
 {
   "manifest_version": 2,
-
-  "name": "Dark Learning",
-  "description": "This extension is a starting point to create a real Chrome extension",
   "version": "0.0.1",
+  "short_name": "Penumbra",
+  "name": "penumbra",
+  "description": "Sample application showing how to create an extension with Create React App",
   "browser_action": {
-    "default_popup": "index.html",
-    "default_title": "Open the popup"
+    "default_title": "CRE",
+    "default_popup": "popup.html"
   },
-  "permissions": [
-  ]
+  "background": {
+    "scripts": ["background.bundle.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.bundle.js"]
+    }
+  ],
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+  "options_page": "options.html",
+  "permissions": ["activeTab"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
