@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: white;
   background: black;
+  --holo: linear-gradient(90.14deg, #CBFCFF 0.12%, #DFFFF0 26.95%, #DCD7FF 41.57%, #F6DEFF 50.36%, #D8FFF8 64.16%, #CBFCFF 95.09%);
 }
 
 code {
@@ -15,7 +16,7 @@ code {
 }
 
 .holo {
-  background: linear-gradient(90.14deg, #CBFCFF 0.12%, #DFFFF0 26.95%, #DCD7FF 41.57%, #F6DEFF 50.36%, #D8FFF8 64.16%, #CBFCFF 95.09%);
+  background: var(--holo);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

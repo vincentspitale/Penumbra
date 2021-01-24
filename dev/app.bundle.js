@@ -92,7 +92,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "5412a778415e9401dca3";
+/******/ 	var hotCurrentHash = "808ef01aeaf511b6c226";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1201,7 +1201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".App {\n  background: black;\n  padding: 30px;\n}\n\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,aAAa;AACf","sourcesContent":[".App {\n  background: black;\n  padding: 30px;\n}\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".App {\n  background: black;\n  padding: 30px;\n  display: flex;\n  flex-direction: column;\n}\n\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,aAAa;EACb,aAAa;EACb,sBAAsB;AACxB","sourcesContent":[".App {\n  background: black;\n  padding: 30px;\n  display: flex;\n  flex-direction: column;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -1223,7 +1223,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".toggler {\n   background: rgb(53, 53, 53);\n   color: white;\n   padding: 10px;\n   font-weight: 700;\n   border-radius: 10px;\n   text-align: center;\n}\n\n.toggled {\n    background: rgb(28, 72, 99);\n}", "",{"version":3,"sources":["webpack://src/components/toggle/toggle.css"],"names":[],"mappings":"AAAA;GACG,2BAA2B;GAC3B,YAAY;GACZ,aAAa;GACb,gBAAgB;GAChB,mBAAmB;GACnB,kBAAkB;AACrB;;AAEA;IACI,2BAA2B;AAC/B","sourcesContent":[".toggler {\n   background: rgb(53, 53, 53);\n   color: white;\n   padding: 10px;\n   font-weight: 700;\n   border-radius: 10px;\n   text-align: center;\n}\n\n.toggled {\n    background: rgb(28, 72, 99);\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".toggler {\n   background: rgb(53, 53, 53);\n   color: white;\n   padding: 10px;\n   font-weight: 700;\n   border-radius: 10px;\n   text-align: center;\n   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);\n}\n\n.toggler:hover {\n    transform: scale(1.05);\n}\n\n.toggled {\n    background: var(--holo);\n    color: black;\n}\n\nbutton {\n    background: none;\n    border: none;\n    outline: none;\n}", "",{"version":3,"sources":["webpack://src/components/toggle/toggle.css"],"names":[],"mappings":"AAAA;GACG,2BAA2B;GAC3B,YAAY;GACZ,aAAa;GACb,gBAAgB;GAChB,mBAAmB;GACnB,kBAAkB;GAClB,+CAA+C;AAClD;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,uBAAuB;IACvB,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,YAAY;IACZ,aAAa;AACjB","sourcesContent":[".toggler {\n   background: rgb(53, 53, 53);\n   color: white;\n   padding: 10px;\n   font-weight: 700;\n   border-radius: 10px;\n   text-align: center;\n   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);\n}\n\n.toggler:hover {\n    transform: scale(1.05);\n}\n\n.toggled {\n    background: var(--holo);\n    color: black;\n}\n\nbutton {\n    background: none;\n    border: none;\n    outline: none;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -1245,7 +1245,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: white;\n  background: black;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.holo {\n  background: linear-gradient(90.14deg, #CBFCFF 0.12%, #DFFFF0 26.95%, #DCD7FF 41.57%, #F6DEFF 50.36%, #D8FFF8 64.16%, #CBFCFF 95.09%);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}", "",{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;EAClC,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE;aACW;AACb;;AAEA;EACE,oIAAoI;EACpI,6BAA6B;EAC7B,oCAAoC;AACtC","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: white;\n  background: black;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.holo {\n  background: linear-gradient(90.14deg, #CBFCFF 0.12%, #DFFFF0 26.95%, #DCD7FF 41.57%, #F6DEFF 50.36%, #D8FFF8 64.16%, #CBFCFF 95.09%);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: white;\n  background: black;\n  --holo: linear-gradient(90.14deg, #CBFCFF 0.12%, #DFFFF0 26.95%, #DCD7FF 41.57%, #F6DEFF 50.36%, #D8FFF8 64.16%, #CBFCFF 95.09%);\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.holo {\n  background: var(--holo);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}", "",{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;EAClC,YAAY;EACZ,iBAAiB;EACjB,gIAAgI;AAClI;;AAEA;EACE;aACW;AACb;;AAEA;EACE,uBAAuB;EACvB,6BAA6B;EAC7B,oCAAoC;AACtC","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: white;\n  background: black;\n  --holo: linear-gradient(90.14deg, #CBFCFF 0.12%, #DFFFF0 26.95%, #DCD7FF 41.57%, #F6DEFF 50.36%, #D8FFF8 64.16%, #CBFCFF 95.09%);\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n.holo {\n  background: var(--holo);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -43374,6 +43374,13 @@ function insertCode(tabId, isDark) {
   });
 }
 
+chrome.tabs.onUpdated.addListener(function (tabId, info) {
+  //  if (info.status && info.status == "complete")
+  const stickyValue = window.localStorage.getItem('isDark');
+  insertCode(tabId, JSON.parse(stickyValue)); //  else if (info.url && info.url.slice(0,4) == "http") 
+  //      insertCSS(tabId);
+});
+
 function updateTabs(isDark) {
   chrome.tabs.query({}, function (tabs) {
     for (var i = 0; i < tabs.length; ++i) {
@@ -43386,13 +43393,14 @@ function updateTabs(isDark) {
 class Toggle extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
   constructor(props) {
     super(props);
+    const stickyValue = window.localStorage.getItem('isDark');
     this.state = {
-      isDark: localStorage.isDark
+      isDark: JSON.parse(stickyValue)
     };
   }
 
   toggle() {
-    localStorage.isDark = !this.state.isDark;
+    window.localStorage.setItem('isDark', !this.state.isDark);
     this.setState({
       isDark: !this.state.isDark
     });
@@ -43400,13 +43408,13 @@ class Toggle extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
 
   render() {
     updateTabs(this.state.isDark);
-    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
       className: this.state.isDark ? "toggler toggled" : "toggler",
       onClick: () => this.toggle(),
       children: this.state.isDark ? "Disable Invert" : "Enable Invert"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 59,
       columnNumber: 16
     }, this);
   }

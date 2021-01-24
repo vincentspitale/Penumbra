@@ -11,6 +11,17 @@ function insertCode(tabId, isDark) {
     });
 }
 
+chrome.tabs.onUpdated.addListener(function(tabId, info) {
+    //  if (info.status && info.status == "complete")
+
+    const stickyValue =
+        window.localStorage.getItem('isDark');
+
+            insertCode(tabId, JSON.parse(stickyValue));
+    //  else if (info.url && info.url.slice(0,4) == "http") 
+    //      insertCSS(tabId);
+    });
+
 
 
 function updateTabs(isDark) {
@@ -27,21 +38,25 @@ class Toggle extends Component {
     constructor(props) {
         super(props)
 
+        const stickyValue =
+        window.localStorage.getItem('isDark');
+    
+
         this.state = {
-            isDark: localStorage.isDark,
+            isDark: JSON.parse(stickyValue),
         }
 
     }
     
 
     toggle() {
-        localStorage.isDark = !this.state.isDark
+        window.localStorage.setItem('isDark', !this.state.isDark)
         this.setState({isDark: !this.state.isDark})
     }
 
     render() { 
         updateTabs(this.state.isDark)
-        return <div className={this.state.isDark ? "toggler toggled" : "toggler"} onClick={() => this.toggle()}>{this.state.isDark ? "Disable Invert" : "Enable Invert"}</div>
+        return <button className={this.state.isDark ? "toggler toggled" : "toggler"} onClick={() => this.toggle()}>{this.state.isDark ? "Disable Invert" : "Enable Invert"}</button>
     }
 
     
