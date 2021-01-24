@@ -11,17 +11,6 @@ function insertCode(tabId, isDark) {
     });
 }
 
-chrome.tabs.onUpdated.addListener(function(tabId, info) {
-    //  if (info.status && info.status == "complete")
-
-    const stickyValue =
-        window.localStorage.getItem('isDark');
-
-            insertCode(tabId, JSON.parse(stickyValue));
-    //  else if (info.url && info.url.slice(0,4) == "http") 
-    //      insertCSS(tabId);
-    });
-
 
 
 function updateTabs(isDark) {
