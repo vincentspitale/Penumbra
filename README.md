@@ -26,22 +26,27 @@ We all learned how to build a chrome extension for the first time.  For some of 
 We are considering functionality that would prevent Penumbra from inverting videos that are already recorded with a dark color scheme.  At the moment, the user needs to manually toggle inverter.  We also plan to publish Penumbra to the chrome web store, so that other students may use it.
 
 
-# Getting Setup with Penumbra
+# Getting Setup
 
 ## Download a release
 
 You can [download a release here](https://github.com/vincentspitale/Penumbra/releases) then:
 
-* unzip the compressed directory
-* find the extensions manager in Chrome
-* enable developer mode
-* click 'load unpacked' and select the unzipped folder
+* Unzip the compressed directory
+* Go to `chrome://extensions/`
+* Ensure `Developer Mode` is enabled
+* Click `load unpacked`
+* Select the unzipped folder
+* Enjoy!
 
 ## Contributing to the source
+
+### Install Dependencies 
 In the project directory, you must first run:
 
 ### `yarn install`
 Downloads all of Penumbra's dependencies.
+### Available Commands
 
 ### `yarn start`
 
@@ -56,8 +61,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
-### `npm run build`
+### `yarn build` or `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
