@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5BE971126700CC200388E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE971026700CC200388E3A /* AppDelegate.swift */; };
+		D5BE971326700CC200388E3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE971226700CC200388E3A /* SceneDelegate.swift */; };
+		D5BE971626700CC200388E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE971426700CC200388E3A /* LaunchScreen.storyboard */; };
+		D5BE971926700CC200388E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE971726700CC200388E3A /* Main.storyboard */; };
+		D5BE972226700CC200388E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE972126700CC200388E3A /* AppDelegate.swift */; };
+		D5BE972526700CC200388E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE972326700CC200388E3A /* Main.storyboard */; };
+		D5BE972D26700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5BE972C26700CC200388E3A /* Penumbra Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5BE973726700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5BE973626700CC200388E3A /* Penumbra Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5BE973C26700CC200388E3A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970026700CC100388E3A /* Main.html */; };
+		D5BE973D26700CC200388E3A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970026700CC100388E3A /* Main.html */; };
+		D5BE973E26700CC200388E3A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970226700CC100388E3A /* Icon.png */; };
+		D5BE973F26700CC200388E3A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970226700CC100388E3A /* Icon.png */; };
+		D5BE974026700CC200388E3A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970326700CC100388E3A /* Style.css */; };
+		D5BE974126700CC200388E3A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970326700CC100388E3A /* Style.css */; };
+		D5BE974226700CC200388E3A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970426700CC100388E3A /* Script.js */; };
+		D5BE974326700CC200388E3A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970426700CC100388E3A /* Script.js */; };
+		D5BE974426700CC200388E3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE970526700CC100388E3A /* ViewController.swift */; };
+		D5BE974526700CC200388E3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE970526700CC100388E3A /* ViewController.swift */; };
+		D5BE974626700CC200388E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970626700CC200388E3A /* Assets.xcassets */; };
+		D5BE974726700CC200388E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970626700CC200388E3A /* Assets.xcassets */; };
+		D5BE974826700CC200388E3A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE970826700CC200388E3A /* SafariWebExtensionHandler.swift */; };
+		D5BE974926700CC200388E3A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE970826700CC200388E3A /* SafariWebExtensionHandler.swift */; };
+		D5BE976E26700CC200388E3A /* app.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE975B26700CC200388E3A /* app.bundle.js */; };
+		D5BE976F26700CC200388E3A /* app.bundle.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5BE975C26700CC200388E3A /* app.bundle.js.LICENSE.txt */; };
+		D5BE977026700CC200388E3A /* contentScript.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE975E26700CC200388E3A /* contentScript.bundle.js */; };
+		D5BE977126700CC200388E3A /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976026700CC200388E3A /* popup.html */; };
+		D5BE977226700CC200388E3A /* background.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976126700CC200388E3A /* background.bundle.js */; };
+		D5BE977326700CC200388E3A /* asset-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976226700CC200388E3A /* asset-manifest.json */; };
+		D5BE977426700CC200388E3A /* 4.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976326700CC200388E3A /* 4.bundle.js */; };
+		D5BE977526700CC200388E3A /* img in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976526700CC200388E3A /* img */; };
+		D5BE977626700CC200388E3A /* static in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976626700CC200388E3A /* static */; };
+		D5BE977726700CC200388E3A /* options.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976726700CC200388E3A /* options.bundle.js */; };
+		D5BE977826700CC200388E3A /* options.bundle.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976826700CC200388E3A /* options.bundle.js.LICENSE.txt */; };
+		D5BE977926700CC200388E3A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976926700CC200388E3A /* manifest.json */; };
+		D5BE977A26700CC200388E3A /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976A26700CC200388E3A /* options.html */; };
+		D5BE977B26700CC200388E3A /* robots.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976B26700CC200388E3A /* robots.txt */; };
+		D5BE977C26700CC200388E3A /* app.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE975B26700CC200388E3A /* app.bundle.js */; };
+		D5BE977D26700CC200388E3A /* app.bundle.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5BE975C26700CC200388E3A /* app.bundle.js.LICENSE.txt */; };
+		D5BE977E26700CC200388E3A /* contentScript.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE975E26700CC200388E3A /* contentScript.bundle.js */; };
+		D5BE977F26700CC200388E3A /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976026700CC200388E3A /* popup.html */; };
+		D5BE978026700CC200388E3A /* background.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976126700CC200388E3A /* background.bundle.js */; };
+		D5BE978126700CC200388E3A /* asset-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976226700CC200388E3A /* asset-manifest.json */; };
+		D5BE978226700CC200388E3A /* 4.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976326700CC200388E3A /* 4.bundle.js */; };
+		D5BE978326700CC200388E3A /* img in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976526700CC200388E3A /* img */; };
+		D5BE978426700CC200388E3A /* static in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976626700CC200388E3A /* static */; };
+		D5BE978526700CC200388E3A /* options.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976726700CC200388E3A /* options.bundle.js */; };
+		D5BE978626700CC200388E3A /* options.bundle.js.LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976826700CC200388E3A /* options.bundle.js.LICENSE.txt */; };
+		D5BE978726700CC200388E3A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976926700CC200388E3A /* manifest.json */; };
+		D5BE978826700CC200388E3A /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976A26700CC200388E3A /* options.html */; };
+		D5BE978926700CC200388E3A /* robots.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976B26700CC200388E3A /* robots.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5BE972E26700CC200388E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5BE96FA26700CC100388E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5BE972B26700CC200388E3A;
+			remoteInfo = "Penumbra Extension (iOS)";
+		};
+		D5BE973826700CC200388E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5BE96FA26700CC100388E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5BE973526700CC200388E3A;
+			remoteInfo = "Penumbra Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5BE974F26700CC200388E3A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D5BE972D26700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE975626700CC200388E3A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D5BE973726700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D5BE970126700CC100388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		D5BE970226700CC100388E3A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D5BE970326700CC100388E3A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		D5BE970426700CC100388E3A /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		D5BE970526700CC100388E3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5BE970626700CC200388E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5BE970826700CC200388E3A /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		D5BE970D26700CC200388E3A /* Penumbra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Penumbra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BE971026700CC200388E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5BE971226700CC200388E3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D5BE971526700CC200388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5BE971826700CC200388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5BE971A26700CC200388E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5BE971F26700CC200388E3A /* Penumbra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Penumbra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BE972126700CC200388E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5BE972426700CC200388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5BE972626700CC200388E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5BE972726700CC200388E3A /* Penumbra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Penumbra.entitlements; sourceTree = "<group>"; };
+		D5BE972C26700CC200388E3A /* Penumbra Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Penumbra Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BE973126700CC200388E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5BE973626700CC200388E3A /* Penumbra Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Penumbra Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BE973B26700CC200388E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5BE975B26700CC200388E3A /* app.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = app.bundle.js; path = ../../build/app.bundle.js; sourceTree = "<group>"; };
+		D5BE975C26700CC200388E3A /* app.bundle.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = app.bundle.js.LICENSE.txt; path = ../../build/app.bundle.js.LICENSE.txt; sourceTree = "<group>"; };
+		D5BE975D26700CC200388E3A /* app.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = app.bundle.js.map; path = ../../build/app.bundle.js.map; sourceTree = "<group>"; };
+		D5BE975E26700CC200388E3A /* contentScript.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = contentScript.bundle.js; path = ../../build/contentScript.bundle.js; sourceTree = "<group>"; };
+		D5BE975F26700CC200388E3A /* options.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = options.bundle.js.map; path = ../../build/options.bundle.js.map; sourceTree = "<group>"; };
+		D5BE976026700CC200388E3A /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../build/popup.html; sourceTree = "<group>"; };
+		D5BE976126700CC200388E3A /* background.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.bundle.js; path = ../../build/background.bundle.js; sourceTree = "<group>"; };
+		D5BE976226700CC200388E3A /* asset-manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "asset-manifest.json"; path = "../../build/asset-manifest.json"; sourceTree = "<group>"; };
+		D5BE976326700CC200388E3A /* 4.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = 4.bundle.js; path = ../../build/4.bundle.js; sourceTree = "<group>"; };
+		D5BE976426700CC200388E3A /* 4.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = 4.bundle.js.map; path = ../../build/4.bundle.js.map; sourceTree = "<group>"; };
+		D5BE976526700CC200388E3A /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../../build/img; sourceTree = "<group>"; };
+		D5BE976626700CC200388E3A /* static */ = {isa = PBXFileReference; lastKnownFileType = folder; name = static; path = ../../build/static; sourceTree = "<group>"; };
+		D5BE976726700CC200388E3A /* options.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.bundle.js; path = ../../build/options.bundle.js; sourceTree = "<group>"; };
+		D5BE976826700CC200388E3A /* options.bundle.js.LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = options.bundle.js.LICENSE.txt; path = ../../build/options.bundle.js.LICENSE.txt; sourceTree = "<group>"; };
+		D5BE976926700CC200388E3A /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../build/manifest.json; sourceTree = "<group>"; };
+		D5BE976A26700CC200388E3A /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../build/options.html; sourceTree = "<group>"; };
+		D5BE976B26700CC200388E3A /* robots.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = robots.txt; path = ../../build/robots.txt; sourceTree = "<group>"; };
+		D5BE976C26700CC200388E3A /* contentScript.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = contentScript.bundle.js.map; path = ../../build/contentScript.bundle.js.map; sourceTree = "<group>"; };
+		D5BE976D26700CC200388E3A /* background.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = background.bundle.js.map; path = ../../build/background.bundle.js.map; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5BE970A26700CC200388E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE971C26700CC200388E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE972926700CC200388E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE973326700CC200388E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5BE96F926700CC100388E3A = {
+			isa = PBXGroup;
+			children = (
+				D5BE96FE26700CC100388E3A /* Shared (App) */,
+				D5BE970726700CC200388E3A /* Shared (Extension) */,
+				D5BE970F26700CC200388E3A /* iOS (App) */,
+				D5BE972026700CC200388E3A /* macOS (App) */,
+				D5BE973026700CC200388E3A /* iOS (Extension) */,
+				D5BE973A26700CC200388E3A /* macOS (Extension) */,
+				D5BE970E26700CC200388E3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5BE96FE26700CC100388E3A /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE970526700CC100388E3A /* ViewController.swift */,
+				D5BE970626700CC200388E3A /* Assets.xcassets */,
+				D5BE96FF26700CC100388E3A /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		D5BE96FF26700CC100388E3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE970026700CC100388E3A /* Main.html */,
+				D5BE970226700CC100388E3A /* Icon.png */,
+				D5BE970326700CC100388E3A /* Style.css */,
+				D5BE970426700CC100388E3A /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5BE970726700CC200388E3A /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE975A26700CC200388E3A /* Resources */,
+				D5BE970826700CC200388E3A /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		D5BE970E26700CC200388E3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE970D26700CC200388E3A /* Penumbra.app */,
+				D5BE971F26700CC200388E3A /* Penumbra.app */,
+				D5BE972C26700CC200388E3A /* Penumbra Extension.appex */,
+				D5BE973626700CC200388E3A /* Penumbra Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5BE970F26700CC200388E3A /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE971026700CC200388E3A /* AppDelegate.swift */,
+				D5BE971226700CC200388E3A /* SceneDelegate.swift */,
+				D5BE971426700CC200388E3A /* LaunchScreen.storyboard */,
+				D5BE971726700CC200388E3A /* Main.storyboard */,
+				D5BE971A26700CC200388E3A /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		D5BE972026700CC200388E3A /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE972126700CC200388E3A /* AppDelegate.swift */,
+				D5BE972326700CC200388E3A /* Main.storyboard */,
+				D5BE972626700CC200388E3A /* Info.plist */,
+				D5BE972726700CC200388E3A /* Penumbra.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		D5BE973026700CC200388E3A /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE973126700CC200388E3A /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		D5BE973A26700CC200388E3A /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE973B26700CC200388E3A /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		D5BE975A26700CC200388E3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5BE975B26700CC200388E3A /* app.bundle.js */,
+				D5BE975C26700CC200388E3A /* app.bundle.js.LICENSE.txt */,
+				D5BE975D26700CC200388E3A /* app.bundle.js.map */,
+				D5BE975E26700CC200388E3A /* contentScript.bundle.js */,
+				D5BE975F26700CC200388E3A /* options.bundle.js.map */,
+				D5BE976026700CC200388E3A /* popup.html */,
+				D5BE976126700CC200388E3A /* background.bundle.js */,
+				D5BE976226700CC200388E3A /* asset-manifest.json */,
+				D5BE976326700CC200388E3A /* 4.bundle.js */,
+				D5BE976426700CC200388E3A /* 4.bundle.js.map */,
+				D5BE976526700CC200388E3A /* img */,
+				D5BE976626700CC200388E3A /* static */,
+				D5BE976726700CC200388E3A /* options.bundle.js */,
+				D5BE976826700CC200388E3A /* options.bundle.js.LICENSE.txt */,
+				D5BE976926700CC200388E3A /* manifest.json */,
+				D5BE976A26700CC200388E3A /* options.html */,
+				D5BE976B26700CC200388E3A /* robots.txt */,
+				D5BE976C26700CC200388E3A /* contentScript.bundle.js.map */,
+				D5BE976D26700CC200388E3A /* background.bundle.js.map */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5BE970C26700CC200388E3A /* Penumbra (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5BE975026700CC200388E3A /* Build configuration list for PBXNativeTarget "Penumbra (iOS)" */;
+			buildPhases = (
+				D5BE970926700CC200388E3A /* Sources */,
+				D5BE970A26700CC200388E3A /* Frameworks */,
+				D5BE970B26700CC200388E3A /* Resources */,
+				D5BE974F26700CC200388E3A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5BE972F26700CC200388E3A /* PBXTargetDependency */,
+			);
+			name = "Penumbra (iOS)";
+			productName = "Penumbra (iOS)";
+			productReference = D5BE970D26700CC200388E3A /* Penumbra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5BE971E26700CC200388E3A /* Penumbra (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5BE975726700CC200388E3A /* Build configuration list for PBXNativeTarget "Penumbra (macOS)" */;
+			buildPhases = (
+				D5BE971B26700CC200388E3A /* Sources */,
+				D5BE971C26700CC200388E3A /* Frameworks */,
+				D5BE971D26700CC200388E3A /* Resources */,
+				D5BE975626700CC200388E3A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5BE973926700CC200388E3A /* PBXTargetDependency */,
+			);
+			name = "Penumbra (macOS)";
+			productName = "Penumbra (macOS)";
+			productReference = D5BE971F26700CC200388E3A /* Penumbra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5BE972B26700CC200388E3A /* Penumbra Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5BE974C26700CC200388E3A /* Build configuration list for PBXNativeTarget "Penumbra Extension (iOS)" */;
+			buildPhases = (
+				D5BE972826700CC200388E3A /* Sources */,
+				D5BE972926700CC200388E3A /* Frameworks */,
+				D5BE972A26700CC200388E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Penumbra Extension (iOS)";
+			productName = "Penumbra Extension (iOS)";
+			productReference = D5BE972C26700CC200388E3A /* Penumbra Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D5BE973526700CC200388E3A /* Penumbra Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5BE975326700CC200388E3A /* Build configuration list for PBXNativeTarget "Penumbra Extension (macOS)" */;
+			buildPhases = (
+				D5BE973226700CC200388E3A /* Sources */,
+				D5BE973326700CC200388E3A /* Frameworks */,
+				D5BE973426700CC200388E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Penumbra Extension (macOS)";
+			productName = "Penumbra Extension (macOS)";
+			productReference = D5BE973626700CC200388E3A /* Penumbra Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5BE96FA26700CC100388E3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					D5BE970C26700CC200388E3A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					D5BE971E26700CC200388E3A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					D5BE972B26700CC200388E3A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					D5BE973526700CC200388E3A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = D5BE96FD26700CC100388E3A /* Build configuration list for PBXProject "Penumbra" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5BE96F926700CC100388E3A;
+			productRefGroup = D5BE970E26700CC200388E3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5BE970C26700CC200388E3A /* Penumbra (iOS) */,
+				D5BE971E26700CC200388E3A /* Penumbra (macOS) */,
+				D5BE972B26700CC200388E3A /* Penumbra Extension (iOS) */,
+				D5BE973526700CC200388E3A /* Penumbra Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5BE970B26700CC200388E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE973E26700CC200388E3A /* Icon.png in Resources */,
+				D5BE971626700CC200388E3A /* LaunchScreen.storyboard in Resources */,
+				D5BE973C26700CC200388E3A /* Main.html in Resources */,
+				D5BE974226700CC200388E3A /* Script.js in Resources */,
+				D5BE974626700CC200388E3A /* Assets.xcassets in Resources */,
+				D5BE971926700CC200388E3A /* Main.storyboard in Resources */,
+				D5BE974026700CC200388E3A /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE971D26700CC200388E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE973F26700CC200388E3A /* Icon.png in Resources */,
+				D5BE974126700CC200388E3A /* Style.css in Resources */,
+				D5BE972526700CC200388E3A /* Main.storyboard in Resources */,
+				D5BE974326700CC200388E3A /* Script.js in Resources */,
+				D5BE974726700CC200388E3A /* Assets.xcassets in Resources */,
+				D5BE973D26700CC200388E3A /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE972A26700CC200388E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE978326700CC200388E3A /* img in Resources */,
+				D5BE978026700CC200388E3A /* background.bundle.js in Resources */,
+				D5BE978826700CC200388E3A /* options.html in Resources */,
+				D5BE978126700CC200388E3A /* asset-manifest.json in Resources */,
+				D5BE978226700CC200388E3A /* 4.bundle.js in Resources */,
+				D5BE978926700CC200388E3A /* robots.txt in Resources */,
+				D5BE978726700CC200388E3A /* manifest.json in Resources */,
+				D5BE978526700CC200388E3A /* options.bundle.js in Resources */,
+				D5BE977E26700CC200388E3A /* contentScript.bundle.js in Resources */,
+				D5BE977F26700CC200388E3A /* popup.html in Resources */,
+				D5BE977D26700CC200388E3A /* app.bundle.js.LICENSE.txt in Resources */,
+				D5BE978626700CC200388E3A /* options.bundle.js.LICENSE.txt in Resources */,
+				D5BE978426700CC200388E3A /* static in Resources */,
+				D5BE977C26700CC200388E3A /* app.bundle.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE973426700CC200388E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE977526700CC200388E3A /* img in Resources */,
+				D5BE977226700CC200388E3A /* background.bundle.js in Resources */,
+				D5BE977A26700CC200388E3A /* options.html in Resources */,
+				D5BE977326700CC200388E3A /* asset-manifest.json in Resources */,
+				D5BE977426700CC200388E3A /* 4.bundle.js in Resources */,
+				D5BE977B26700CC200388E3A /* robots.txt in Resources */,
+				D5BE977926700CC200388E3A /* manifest.json in Resources */,
+				D5BE977726700CC200388E3A /* options.bundle.js in Resources */,
+				D5BE977026700CC200388E3A /* contentScript.bundle.js in Resources */,
+				D5BE977126700CC200388E3A /* popup.html in Resources */,
+				D5BE976F26700CC200388E3A /* app.bundle.js.LICENSE.txt in Resources */,
+				D5BE977826700CC200388E3A /* options.bundle.js.LICENSE.txt in Resources */,
+				D5BE977626700CC200388E3A /* static in Resources */,
+				D5BE976E26700CC200388E3A /* app.bundle.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5BE970926700CC200388E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE974426700CC200388E3A /* ViewController.swift in Sources */,
+				D5BE971126700CC200388E3A /* AppDelegate.swift in Sources */,
+				D5BE971326700CC200388E3A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE971B26700CC200388E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE974526700CC200388E3A /* ViewController.swift in Sources */,
+				D5BE972226700CC200388E3A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE972826700CC200388E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE974826700CC200388E3A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BE973226700CC200388E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5BE974926700CC200388E3A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5BE972F26700CC200388E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5BE972B26700CC200388E3A /* Penumbra Extension (iOS) */;
+			targetProxy = D5BE972E26700CC200388E3A /* PBXContainerItemProxy */;
+		};
+		D5BE973926700CC200388E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5BE973526700CC200388E3A /* Penumbra Extension (macOS) */;
+			targetProxy = D5BE973826700CC200388E3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5BE970026700CC100388E3A /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5BE970126700CC100388E3A /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		D5BE971426700CC200388E3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5BE971526700CC200388E3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D5BE971726700CC200388E3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5BE971826700CC200388E3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5BE972326700CC200388E3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5BE972426700CC200388E3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5BE974A26700CC200388E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5BE974B26700CC200388E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D5BE974D26700CC200388E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra.Extension;
+				PRODUCT_NAME = "Penumbra Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5BE974E26700CC200388E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra.Extension;
+				PRODUCT_NAME = "Penumbra Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5BE975126700CC200388E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Invert";
+				INFOPLIST_KEY_CFBundleExecutable = Penumbra;
+				INFOPLIST_KEY_CFBundleName = Penumbra;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
+				PRODUCT_NAME = Penumbra;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5BE975226700CC200388E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Invert";
+				INFOPLIST_KEY_CFBundleExecutable = Penumbra;
+				INFOPLIST_KEY_CFBundleName = Penumbra;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
+				PRODUCT_NAME = Penumbra;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5BE975426700CC200388E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra.Extension;
+				PRODUCT_NAME = "Penumbra Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D5BE975526700CC200388E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra.Extension;
+				PRODUCT_NAME = "Penumbra Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D5BE975826700CC200388E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Penumbra.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Penumbra;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
+				PRODUCT_NAME = Penumbra;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D5BE975926700CC200388E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Penumbra.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Penumbra;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
+				PRODUCT_NAME = Penumbra;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5BE96FD26700CC100388E3A /* Build configuration list for PBXProject "Penumbra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BE974A26700CC200388E3A /* Debug */,
+				D5BE974B26700CC200388E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5BE974C26700CC200388E3A /* Build configuration list for PBXNativeTarget "Penumbra Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BE974D26700CC200388E3A /* Debug */,
+				D5BE974E26700CC200388E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5BE975026700CC200388E3A /* Build configuration list for PBXNativeTarget "Penumbra (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BE975126700CC200388E3A /* Debug */,
+				D5BE975226700CC200388E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5BE975326700CC200388E3A /* Build configuration list for PBXNativeTarget "Penumbra Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BE975426700CC200388E3A /* Debug */,
+				D5BE975526700CC200388E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5BE975726700CC200388E3A /* Build configuration list for PBXNativeTarget "Penumbra (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5BE975826700CC200388E3A /* Debug */,
+				D5BE975926700CC200388E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5BE96FA26700CC100388E3A /* Project object */;
+}
