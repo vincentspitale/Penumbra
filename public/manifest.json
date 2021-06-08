@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "short_name": "Penumbra",
   "name": "Penumbra",
-  "description": "Sample application showing how to create an extension with Create React App",
+  "description": "Inverts the brightness of web videos.",
   "browser_action": {
     "default_title": "CRE",
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["background.bundle.js"]
+    "scripts": ["background.bundle.js"],
+    "persistent": false
   },
   "content_scripts": [
     {
