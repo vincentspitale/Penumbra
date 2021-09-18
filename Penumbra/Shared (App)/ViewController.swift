@@ -6,6 +6,7 @@
 //
 
 import WebKit
+import SwiftUI
 
 #if os(iOS)
 import UIKit
@@ -20,10 +21,34 @@ let extensionBundleIdentifier = "com.yourCompany.Penumbra.Extension"
 
 class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
 
-    @IBOutlet var webView: WKWebView!
+    lazy var webView: WKWebView = {
+        let webView = WKWebView()
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        return webView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.addSubview(webView)
+        
+        #if os(iOS)
+        let viewController = UIHostingController(rootView: WelcomeView())
+        #elseif os(macOS)
+        let viewController = NSHostingController(rootView: WelcomeView())
+        #endif
+        
+        viewController.view.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(viewController.view)
+        
+        let constraints = [
+            webView.widthAnchor.constraint(equalTo: self.view.widthAnchor),
+            webView.heightAnchor.constraint(equalTo: self.view.heightAnchor),
+            viewController.view.widthAnchor.constraint(equalTo: self.view.widthAnchor),
+            viewController.view.heightAnchor.constraint(equalTo: self.view.heightAnchor)
+        ]
+        
+        NSLayoutConstraint.activate(constraints)
 
         self.webView.navigationDelegate = self
 

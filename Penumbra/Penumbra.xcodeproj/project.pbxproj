@@ -10,9 +10,7 @@
 		D5BE971126700CC200388E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE971026700CC200388E3A /* AppDelegate.swift */; };
 		D5BE971326700CC200388E3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE971226700CC200388E3A /* SceneDelegate.swift */; };
 		D5BE971626700CC200388E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE971426700CC200388E3A /* LaunchScreen.storyboard */; };
-		D5BE971926700CC200388E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE971726700CC200388E3A /* Main.storyboard */; };
 		D5BE972226700CC200388E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE972126700CC200388E3A /* AppDelegate.swift */; };
-		D5BE972526700CC200388E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE972326700CC200388E3A /* Main.storyboard */; };
 		D5BE972D26700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5BE972C26700CC200388E3A /* Penumbra Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D5BE973726700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5BE973626700CC200388E3A /* Penumbra Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D5BE973C26700CC200388E3A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970026700CC100388E3A /* Main.html */; };
@@ -57,6 +55,8 @@
 		D5BE978726700CC200388E3A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976926700CC200388E3A /* manifest.json */; };
 		D5BE978826700CC200388E3A /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976A26700CC200388E3A /* options.html */; };
 		D5BE978926700CC200388E3A /* robots.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5BE976B26700CC200388E3A /* robots.txt */; };
+		D5CBCC4026F5A82400A6BEBE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCC3F26F5A82400A6BEBE /* WelcomeView.swift */; };
+		D5CBCC4126F5A82400A6BEBE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBCC3F26F5A82400A6BEBE /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,11 +113,9 @@
 		D5BE971026700CC200388E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BE971226700CC200388E3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D5BE971526700CC200388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D5BE971826700CC200388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5BE971A26700CC200388E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5BE971F26700CC200388E3A /* Penumbra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Penumbra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BE972126700CC200388E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5BE972426700CC200388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5BE972626700CC200388E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5BE972726700CC200388E3A /* Penumbra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Penumbra.entitlements; sourceTree = "<group>"; };
 		D5BE972C26700CC200388E3A /* Penumbra Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Penumbra Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +141,7 @@
 		D5BE976B26700CC200388E3A /* robots.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = robots.txt; path = ../../build/robots.txt; sourceTree = "<group>"; };
 		D5BE976C26700CC200388E3A /* contentScript.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = contentScript.bundle.js.map; path = ../../build/contentScript.bundle.js.map; sourceTree = "<group>"; };
 		D5BE976D26700CC200388E3A /* background.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = background.bundle.js.map; path = ../../build/background.bundle.js.map; sourceTree = "<group>"; };
+		D5CBCC3F26F5A82400A6BEBE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +195,7 @@
 				D5BE970526700CC100388E3A /* ViewController.swift */,
 				D5BE970626700CC200388E3A /* Assets.xcassets */,
 				D5BE96FF26700CC100388E3A /* Resources */,
+				D5CBCC3F26F5A82400A6BEBE /* WelcomeView.swift */,
 			);
 			path = "Shared (App)";
 			sourceTree = "<group>";
@@ -237,7 +237,6 @@
 				D5BE971026700CC200388E3A /* AppDelegate.swift */,
 				D5BE971226700CC200388E3A /* SceneDelegate.swift */,
 				D5BE971426700CC200388E3A /* LaunchScreen.storyboard */,
-				D5BE971726700CC200388E3A /* Main.storyboard */,
 				D5BE971A26700CC200388E3A /* Info.plist */,
 			);
 			path = "iOS (App)";
@@ -247,7 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				D5BE972126700CC200388E3A /* AppDelegate.swift */,
-				D5BE972326700CC200388E3A /* Main.storyboard */,
 				D5BE972626700CC200388E3A /* Info.plist */,
 				D5BE972726700CC200388E3A /* Penumbra.entitlements */,
 			);
@@ -427,7 +425,6 @@
 				D5BE973C26700CC200388E3A /* Main.html in Resources */,
 				D5BE974226700CC200388E3A /* Script.js in Resources */,
 				D5BE974626700CC200388E3A /* Assets.xcassets in Resources */,
-				D5BE971926700CC200388E3A /* Main.storyboard in Resources */,
 				D5BE974026700CC200388E3A /* Style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +435,6 @@
 			files = (
 				D5BE973F26700CC200388E3A /* Icon.png in Resources */,
 				D5BE974126700CC200388E3A /* Style.css in Resources */,
-				D5BE972526700CC200388E3A /* Main.storyboard in Resources */,
 				D5BE974326700CC200388E3A /* Script.js in Resources */,
 				D5BE974726700CC200388E3A /* Assets.xcassets in Resources */,
 				D5BE973D26700CC200388E3A /* Main.html in Resources */,
@@ -497,6 +493,7 @@
 				D5BE974426700CC200388E3A /* ViewController.swift in Sources */,
 				D5BE971126700CC200388E3A /* AppDelegate.swift in Sources */,
 				D5BE971326700CC200388E3A /* SceneDelegate.swift in Sources */,
+				D5CBCC4026F5A82400A6BEBE /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5BE974526700CC200388E3A /* ViewController.swift in Sources */,
+				D5CBCC4126F5A82400A6BEBE /* WelcomeView.swift in Sources */,
 				D5BE972226700CC200388E3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,22 +553,6 @@
 				D5BE971526700CC200388E3A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D5BE971726700CC200388E3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5BE971826700CC200388E3A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D5BE972326700CC200388E3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5BE972426700CC200388E3A /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -692,6 +674,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4NGB6G36L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Extension";
@@ -718,6 +701,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4NGB6G36L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Extension";
@@ -748,6 +732,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4NGB6G36L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Invert";
@@ -756,7 +741,6 @@
 				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -786,6 +770,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4NGB6G36L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Penumbra Invert";
@@ -794,7 +779,6 @@
 				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -822,6 +806,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4NGB6G36L;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -850,6 +835,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4NGB6G36L;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -882,19 +868,19 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Penumbra.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4NGB6G36L;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Penumbra;
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -917,19 +903,19 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Penumbra.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4NGB6G36L;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Penumbra;
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
