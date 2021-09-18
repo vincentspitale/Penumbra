@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D58ADB4026F5B6840085A8A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58ADB3F26F5B6840085A8A8 /* main.swift */; };
+		D58ADB4326F5C1070085A8A8 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D58ADB4226F5C1070085A8A8 /* Intents.intentdefinition */; };
+		D58ADB4426F5C1070085A8A8 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D58ADB4226F5C1070085A8A8 /* Intents.intentdefinition */; };
 		D5BE971126700CC200388E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE971026700CC200388E3A /* AppDelegate.swift */; };
 		D5BE971326700CC200388E3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE971226700CC200388E3A /* SceneDelegate.swift */; };
 		D5BE971626700CC200388E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE971426700CC200388E3A /* LaunchScreen.storyboard */; };
@@ -104,6 +106,8 @@
 
 /* Begin PBXFileReference section */
 		D58ADB3F26F5B6840085A8A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D58ADB4126F5C0E40085A8A8 /* Penumbra (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Penumbra (iOS).entitlements"; sourceTree = "<group>"; };
+		D58ADB4226F5C1070085A8A8 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		D5BE970126700CC100388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		D5BE970226700CC100388E3A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D5BE970326700CC100388E3A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -119,7 +123,6 @@
 		D5BE971F26700CC200388E3A /* Penumbra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Penumbra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BE972126700CC200388E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BE972626700CC200388E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5BE972726700CC200388E3A /* Penumbra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Penumbra.entitlements; sourceTree = "<group>"; };
 		D5BE972C26700CC200388E3A /* Penumbra Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Penumbra Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BE973126700CC200388E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5BE973626700CC200388E3A /* Penumbra Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Penumbra Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,8 +147,6 @@
 		D5BE976C26700CC200388E3A /* contentScript.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = contentScript.bundle.js.map; path = ../../build/contentScript.bundle.js.map; sourceTree = "<group>"; };
 		D5BE976D26700CC200388E3A /* background.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = background.bundle.js.map; path = ../../build/background.bundle.js.map; sourceTree = "<group>"; };
 		D5CBCC3F26F5A82400A6BEBE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		D5DE15EF26F5AFB90053584F /* Penumbra (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Penumbra (iOS).entitlements"; sourceTree = "<group>"; };
-		D5DE15F026F5AFB90053584F /* Penumbra Extension (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Penumbra Extension (iOS).entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +184,7 @@
 		D5BE96F926700CC100388E3A = {
 			isa = PBXGroup;
 			children = (
+				D58ADB4126F5C0E40085A8A8 /* Penumbra (iOS).entitlements */,
 				D5BE973026700CC200388E3A /* iOS (Extension) */,
 				D5BE96FE26700CC100388E3A /* Shared (App) */,
 				D5BE970726700CC200388E3A /* Shared (Extension) */,
@@ -200,6 +202,7 @@
 				D5BE970626700CC200388E3A /* Assets.xcassets */,
 				D5BE96FF26700CC100388E3A /* Resources */,
 				D5CBCC3F26F5A82400A6BEBE /* WelcomeView.swift */,
+				D58ADB4226F5C1070085A8A8 /* Intents.intentdefinition */,
 			);
 			path = "Shared (App)";
 			sourceTree = "<group>";
@@ -238,7 +241,6 @@
 		D5BE970F26700CC200388E3A /* iOS (App) */ = {
 			isa = PBXGroup;
 			children = (
-				D5DE15EF26F5AFB90053584F /* Penumbra (iOS).entitlements */,
 				D5BE971026700CC200388E3A /* AppDelegate.swift */,
 				D5BE971226700CC200388E3A /* SceneDelegate.swift */,
 				D5BE971426700CC200388E3A /* LaunchScreen.storyboard */,
@@ -252,7 +254,6 @@
 			children = (
 				D5BE972126700CC200388E3A /* AppDelegate.swift */,
 				D5BE972626700CC200388E3A /* Info.plist */,
-				D5BE972726700CC200388E3A /* Penumbra.entitlements */,
 				D58ADB3F26F5B6840085A8A8 /* main.swift */,
 			);
 			path = "macOS (App)";
@@ -261,7 +262,6 @@
 		D5BE973026700CC200388E3A /* iOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				D5DE15F026F5AFB90053584F /* Penumbra Extension (iOS).entitlements */,
 				D5BE973126700CC200388E3A /* Info.plist */,
 			);
 			name = "iOS (Extension)";
@@ -501,6 +501,7 @@
 				D5BE974426700CC200388E3A /* ViewController.swift in Sources */,
 				D5BE971126700CC200388E3A /* AppDelegate.swift in Sources */,
 				D5BE971326700CC200388E3A /* SceneDelegate.swift in Sources */,
+				D58ADB4326F5C1070085A8A8 /* Intents.intentdefinition in Sources */,
 				D5CBCC4026F5A82400A6BEBE /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +513,7 @@
 				D5BE974526700CC200388E3A /* ViewController.swift in Sources */,
 				D5CBCC4126F5A82400A6BEBE /* WelcomeView.swift in Sources */,
 				D58ADB4026F5B6840085A8A8 /* main.swift in Sources */,
+				D58ADB4426F5C1070085A8A8 /* Intents.intentdefinition in Sources */,
 				D5BE972226700CC200388E3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,7 +684,6 @@
 		D5BE974D26700CC200388E3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Penumbra Extension (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4NGB6G36L;
@@ -711,7 +712,6 @@
 		D5BE974E26700CC200388E3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Penumbra Extension (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4NGB6G36L;
@@ -885,7 +885,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Penumbra.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4NGB6G36L;
@@ -920,7 +919,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Penumbra.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4NGB6G36L;
