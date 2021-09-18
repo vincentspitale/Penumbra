@@ -36,7 +36,7 @@ struct WelcomeView: View {
             Text("Penumbra").font(.largeTitle).bold()
                 .gradientForeground(colors: [.purple, .blue])
                 .padding()
-            Text("Enable the Safari extension in Safari preferences :)").foregroundColor(.secondary).padding()
+            Text("Enable the extension in Safari preferences :)").foregroundColor(.secondary).padding()
         }
     }
     #endif

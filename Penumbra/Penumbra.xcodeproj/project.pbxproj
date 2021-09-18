@@ -183,8 +183,7 @@
 		D5BE96F926700CC100388E3A = {
 			isa = PBXGroup;
 			children = (
-				D5DE15F026F5AFB90053584F /* Penumbra Extension (iOS).entitlements */,
-				D5DE15EF26F5AFB90053584F /* Penumbra (iOS).entitlements */,
+				D5BE973026700CC200388E3A /* iOS (Extension) */,
 				D5BE96FE26700CC100388E3A /* Shared (App) */,
 				D5BE970726700CC200388E3A /* Shared (Extension) */,
 				D5BE970F26700CC200388E3A /* iOS (App) */,
@@ -239,6 +238,7 @@
 		D5BE970F26700CC200388E3A /* iOS (App) */ = {
 			isa = PBXGroup;
 			children = (
+				D5DE15EF26F5AFB90053584F /* Penumbra (iOS).entitlements */,
 				D5BE971026700CC200388E3A /* AppDelegate.swift */,
 				D5BE971226700CC200388E3A /* SceneDelegate.swift */,
 				D5BE971426700CC200388E3A /* LaunchScreen.storyboard */,
@@ -261,15 +261,16 @@
 		D5BE973026700CC200388E3A /* iOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
+				D5DE15F026F5AFB90053584F /* Penumbra Extension (iOS).entitlements */,
 				D5BE973126700CC200388E3A /* Info.plist */,
 			);
-			path = "iOS (Extension)";
+			name = "iOS (Extension)";
+			path = "macOS (Extension)/iOS (Extension)";
 			sourceTree = "<group>";
 		};
 		D5BE973A26700CC200388E3A /* macOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
-				D5BE973026700CC200388E3A /* iOS (Extension) */,
 				D5BE973B26700CC200388E3A /* Info.plist */,
 			);
 			path = "macOS (Extension)";
