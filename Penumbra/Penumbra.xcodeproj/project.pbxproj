@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D58ADB4026F5B6840085A8A8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58ADB3F26F5B6840085A8A8 /* main.swift */; };
 		D5BE971126700CC200388E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE971026700CC200388E3A /* AppDelegate.swift */; };
 		D5BE971326700CC200388E3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE971226700CC200388E3A /* SceneDelegate.swift */; };
 		D5BE971626700CC200388E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BE971426700CC200388E3A /* LaunchScreen.storyboard */; };
 		D5BE972226700CC200388E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BE972126700CC200388E3A /* AppDelegate.swift */; };
-		D5BE972D26700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5BE972C26700CC200388E3A /* Penumbra Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5BE972D26700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5BE972C26700CC200388E3A /* Penumbra Extension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D5BE973726700CC200388E3A /* Penumbra Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D5BE973626700CC200388E3A /* Penumbra Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D5BE973C26700CC200388E3A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970026700CC100388E3A /* Main.html */; };
 		D5BE973D26700CC200388E3A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D5BE970026700CC100388E3A /* Main.html */; };
@@ -102,6 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D58ADB3F26F5B6840085A8A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D5BE970126700CC100388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		D5BE970226700CC100388E3A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D5BE970326700CC100388E3A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -142,6 +144,8 @@
 		D5BE976C26700CC200388E3A /* contentScript.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = contentScript.bundle.js.map; path = ../../build/contentScript.bundle.js.map; sourceTree = "<group>"; };
 		D5BE976D26700CC200388E3A /* background.bundle.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = background.bundle.js.map; path = ../../build/background.bundle.js.map; sourceTree = "<group>"; };
 		D5CBCC3F26F5A82400A6BEBE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		D5DE15EF26F5AFB90053584F /* Penumbra (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Penumbra (iOS).entitlements"; sourceTree = "<group>"; };
+		D5DE15F026F5AFB90053584F /* Penumbra Extension (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Penumbra Extension (iOS).entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,11 +183,12 @@
 		D5BE96F926700CC100388E3A = {
 			isa = PBXGroup;
 			children = (
+				D5DE15F026F5AFB90053584F /* Penumbra Extension (iOS).entitlements */,
+				D5DE15EF26F5AFB90053584F /* Penumbra (iOS).entitlements */,
 				D5BE96FE26700CC100388E3A /* Shared (App) */,
 				D5BE970726700CC200388E3A /* Shared (Extension) */,
 				D5BE970F26700CC200388E3A /* iOS (App) */,
 				D5BE972026700CC200388E3A /* macOS (App) */,
-				D5BE973026700CC200388E3A /* iOS (Extension) */,
 				D5BE973A26700CC200388E3A /* macOS (Extension) */,
 				D5BE970E26700CC200388E3A /* Products */,
 			);
@@ -248,6 +253,7 @@
 				D5BE972126700CC200388E3A /* AppDelegate.swift */,
 				D5BE972626700CC200388E3A /* Info.plist */,
 				D5BE972726700CC200388E3A /* Penumbra.entitlements */,
+				D58ADB3F26F5B6840085A8A8 /* main.swift */,
 			);
 			path = "macOS (App)";
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 		D5BE973A26700CC200388E3A /* macOS (Extension) */ = {
 			isa = PBXGroup;
 			children = (
+				D5BE973026700CC200388E3A /* iOS (Extension) */,
 				D5BE973B26700CC200388E3A /* Info.plist */,
 			);
 			path = "macOS (Extension)";
@@ -503,6 +510,7 @@
 			files = (
 				D5BE974526700CC200388E3A /* ViewController.swift in Sources */,
 				D5CBCC4126F5A82400A6BEBE /* WelcomeView.swift in Sources */,
+				D58ADB4026F5B6840085A8A8 /* main.swift in Sources */,
 				D5BE972226700CC200388E3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +536,7 @@
 /* Begin PBXTargetDependency section */
 		D5BE972F26700CC200388E3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = D5BE972B26700CC200388E3A /* Penumbra Extension (iOS) */;
 			targetProxy = D5BE972E26700CC200388E3A /* PBXContainerItemProxy */;
 		};
@@ -672,6 +681,7 @@
 		D5BE974D26700CC200388E3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Penumbra Extension (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4NGB6G36L;
@@ -690,6 +700,7 @@
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -699,6 +710,7 @@
 		D5BE974E26700CC200388E3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Penumbra Extension (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4NGB6G36L;
@@ -717,6 +729,7 @@
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -730,6 +743,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Penumbra (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4NGB6G36L;
@@ -756,6 +770,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -768,6 +784,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Penumbra (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4NGB6G36L;
@@ -794,6 +811,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -880,7 +899,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -915,7 +934,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",

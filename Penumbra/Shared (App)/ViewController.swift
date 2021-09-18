@@ -31,6 +31,7 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
         super.viewDidLoad()
         
         self.view.addSubview(webView)
+        webView.isHidden = true
         
         #if os(iOS)
         let viewController = UIHostingController(rootView: WelcomeView())
@@ -79,6 +80,12 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
         }
 #endif
     }
+    
+    #if os(macOS)
+    override func loadView() {
+        self.view = NSView(frame: NSRect(x: 0, y: 0, width: NSScreen.main?.frame.width ?? 100, height: NSScreen.main?.frame.height ?? 100))
+    }
+    #endif
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
 #if os(macOS)
