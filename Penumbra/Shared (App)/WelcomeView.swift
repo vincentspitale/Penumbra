@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     @State var showingTeam: Bool = false
+    @State var showBack : Bool = false
     
     var colors: [Color] {
         #if os(macOS)
@@ -49,23 +50,21 @@ struct WelcomeView: View {
     
     var interactive: some View {
             VStack{
-                if self.showingTeam {
+                ZStack{
                     VStack {
-                        Text("Vincent Spitale").font(Font.custom("SF Pro Rounded Regular", size: 14)).gradientForeground(colors: self.colors).padding(5)
-                        Text("Olivia Heiner").font(Font.custom("SF Pro Rounded Regular", size: 14)).gradientForeground(colors: self.colors).padding(5)
-                        Text("Evan Binder").font(Font.custom("SF Pro Rounded Regular", size: 14)).gradientForeground(colors: self.colors).padding(5)
-                    }.padding(5).frame(width: 150, height: 150)
-                        .rotation3DEffect(self.showingTeam ? Angle(degrees: 180): Angle(degrees: 0), axis: (x: CGFloat(0), y: CGFloat(-10), z: CGFloat(0)))
-                } else {
-                    Image("Logo").resizable().scaledToFit().frame(maxWidth: 150)
+                        Text("Vincent Spitale").font(Font.system(.callout, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
+                        Text("Olivia Heiner").font(Font.system(.callout, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
+                        Text("Evan Binder").font(Font.system(.callout, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
+                    }.padding(5).frame(width: 150, height: 150).opacity(showingTeam ? 1.0 : 0.0)
+                    Image("Logo").resizable().scaledToFit().frame(maxWidth: 150).opacity(showingTeam ? 0.0 : 1.0)
                 }
             }.background(Color.white)
             .cornerRadius(self.showingTeam ? 20 : 40)
-                .rotation3DEffect(self.showingTeam ? Angle(degrees: 180): Angle(degrees: 0), axis: (x: CGFloat(0), y: CGFloat(-10), z: CGFloat(0)))
-                .shadow(color: Color.purple.opacity(0.3), radius: 8.0, x: 0, y: 10)
+        .modifier(FlipEffect(flipped: $showingTeam, angle: showBack ? 180 : 0, axis: (x: 0, y: -1)))
+            .shadow(color: Color.purple.opacity(0.3), radius: 8.0, x: 0, y: 10)
                 .padding(30)
                 .onTapGesture {
-                    withAnimation{self.showingTeam.toggle()}
+                    withAnimation(Animation.easeInOut){self.showBack.toggle()}
                 }
                 .frame(height: 250)
     }
