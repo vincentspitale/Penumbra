@@ -692,7 +692,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra.Extension;
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -720,7 +720,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra.Extension;
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -762,7 +762,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -803,7 +803,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -835,7 +835,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra.Extension;
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -864,7 +864,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra.Extension;
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -899,7 +899,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -933,7 +933,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourCompany.Penumbra;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
