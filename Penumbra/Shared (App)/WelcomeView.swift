@@ -52,9 +52,10 @@ struct WelcomeView: View {
             VStack{
                 ZStack{
                     VStack {
-                        Text("Vincent Spitale").font(Font.system(.callout, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
-                        Text("Olivia Heiner").font(Font.system(.callout, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
-                        Text("Evan Binder").font(Font.system(.callout, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
+                        Text("QWER Hacks").font(Font.system(.callout, design: .rounded)).bold().gradientForeground(colors: self.colors).padding(5)
+                        Text("Vincent Spitale").font(Font.system(.footnote, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
+                        Text("Olivia Heiner").font(Font.system(.footnote, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
+                        Text("Evan Binder").font(Font.system(.footnote, design: .rounded)).gradientForeground(colors: self.colors).padding(5)
                     }.padding(5).frame(width: 150, height: 150).opacity(showingTeam ? 1.0 : 0.0)
                     Image("Logo").resizable().scaledToFit().frame(maxWidth: 150).opacity(showingTeam ? 0.0 : 1.0)
                 }

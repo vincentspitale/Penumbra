@@ -104,7 +104,6 @@
 
 /* Begin PBXFileReference section */
 		D58ADB3F26F5B6840085A8A8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D58ADB4126F5C0E40085A8A8 /* Penumbra (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Penumbra (iOS).entitlements"; sourceTree = "<group>"; };
 		D5BE970126700CC100388E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		D5BE970226700CC100388E3A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D5BE970326700CC100388E3A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -181,7 +180,6 @@
 		D5BE96F926700CC100388E3A = {
 			isa = PBXGroup;
 			children = (
-				D58ADB4126F5C0E40085A8A8 /* Penumbra (iOS).entitlements */,
 				D5BE973026700CC200388E3A /* iOS (Extension) */,
 				D5BE96FE26700CC100388E3A /* Shared (App) */,
 				D5BE970726700CC200388E3A /* Shared (Extension) */,
@@ -691,8 +689,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra.Extension;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.PenumbraInvert.Extension;
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -719,8 +717,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra.Extension;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.PenumbraInvert.Extension;
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -757,12 +755,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.PenumbraInvert;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -798,12 +796,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.PenumbraInvert;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
@@ -834,8 +832,8 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra.Extension;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.PenumbraInvert.Extension;
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -863,8 +861,8 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra.Extension;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.PenumbraInvert.Extension;
 				PRODUCT_NAME = "Penumbra Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -888,18 +886,19 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Penumbra;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.PenumbraInvert;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -922,18 +921,19 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Penumbra;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = (
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.Penumbra;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vincentspitale.PenumbraInvert;
 				PRODUCT_NAME = Penumbra;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
